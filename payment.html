@@ -19,6 +19,7 @@
         border-radius: 5px;
         box-shadow: 0px 0px 10px #ccc;
         padding: 20px;
+        margin-bottom: 5rem;
       }
 
       h2 {
@@ -45,19 +46,23 @@
         border: none;
       }
 
-      button[type="submit"] {
-        background-color: #fffff;
-        color: black;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        cursor: pointer;
-      }
+      .btn {
+			display: inline-block;
+			background-color: #4c98af;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-top: 30px;
+			font-size: 16px;
+			transition: background-color 0.3s;
+      cursor: pointer;
+		}
+		.btn:hover {
+			background-color: #4c98af;
+		}
 
-      button[type="submit"]:hover {
-        background-color: #656666;
-      }
+    
     </style>
   </head>
   <body>
@@ -94,10 +99,60 @@
 
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" placeholder="Enter CVV">
-
-        <button type="submit">Pay Now</button>
+        <a href="paymentsuccesful.html" class="btn">Pay Now</a>
       </form>
     </div>
+
+    <div class="footer" id="Footer">
+      <div>
+          <div class="foot">
+              <div class="foot-box">
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Address</b></div>
+                      <div class="foot-info">
+                          Plot 16 Aftab Uddin Ahmed Rd, Dhaka 1229
+                      </div>
+                  </div>
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Email</b></div>
+                      <div class="foot-info">
+                          info@rentit.com
+                      </div>
+                  </div>
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Hotline</b></div>
+                      <div class="foot-info">
+                          23464
+                      </div>
+                  </div>
+              </div>
+              <div class="foot-box">
+                  <div class="foot-right">
+                      <div class="foot-title"><b> Customer Service </b></div>
+                      <div class="foot-info">
+                          <p><a href="">Terms & Conditions</a></p>
+                          <p><a href="">Return Policy</a></p>
+                          <p><a href="">Privacy Policy</a></p>
+                      </div>
+                  </div>
+                  <div class="foot-social">
+                    <a href="#"
+                        ><i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#"
+                        ><i class="fas fa-code"></i>
+                    </a>
+                    <a
+                        href="#"
+                        ><i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#"
+                        ><i class="fab fa-github-square"></i>
+                    </a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
   </body>
 </html>
-﻿
