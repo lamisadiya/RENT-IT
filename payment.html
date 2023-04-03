@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rent IT</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      #payment-options {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fbfffe;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-weight: normal;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select {
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      button[type="submit"] {
+        background-color: #fffff;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #656666;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header ">
+        <a class="navbar-brand" href="index.html"> Rent IT </a>
+      </div>
+
+      <ul class="nav navbar-nav">
+        <li><a href="addapartment.html"> Add Apartment </a></li>
+        <li><a href="signup.html"> Sign In </a></li>
+
+
+      </ul>
+
+
+  </nav>
+    <div id="payment-options">
+      <h2>Select Payment Option</h2>
+      <form>
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method">
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+          <option value="net-banking">Net Banking</option>
+          <option value="digital-wallet">Bkash</option>
+        </select>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" placeholder="Enter card number">
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" placeholder="MM/YY">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="Enter CVV">
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </body>
+</html>
+﻿
