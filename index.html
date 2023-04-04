@@ -19,15 +19,28 @@
         <li><a href="signup.html">Sign In</a></li>
          <div class="search-container">
           <form>
-            <select id="search-input">
+          
+            <select id="location">
               <option value="">Enter a location...</option>
-              <option value="B">Bashundhara</option>
-              <option value="G">Gulshan</option>
-              <option value="U">Uttara</option>
-              
+              <option value="gulshan">Gulshan</option>
+              <option value="uttara">Uttara</option>
+              <option value="bashundhara">Bashundhara</option>
             </select>
-            <button type="submit" id="search-btn">Search</button>       
+            <input type="button" value="Search" onclick="search()" id="search-btn">
           </form>
+          <script>
+          function search() {
+            var location = document.getElementById("location").value;
+      
+            if (location === "gulshan") {
+              window.location.href = "/apartment.html";
+            } else if (location === "uttara") {
+              window.location.href = "/a2.html";
+            } else if (location === "bashundhara") {
+              window.location.href = "/a4.html";
+            }
+          }
+          </script>
           <div id="search-results"></div>
         </div> 
       </ul>
